@@ -12,6 +12,7 @@ class DateViewController: UIViewController {
     var finalCost: Double!
     var dateString: String? = nil
     
+    @IBOutlet weak var telephoneLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var telephoneTF: UITextField!
@@ -69,6 +70,20 @@ class DateViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Хорошо", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showAlertWithAction(title: String, message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Xopowo", style: .cancel, handler: { (alert) in
+            self.navigationController?.popToRootViewController(animated: true)
+            BasketService.shared.array.removeAll()
+            if let tabItems = self.tabBarController?.tabBar.items {
+                let tabItem = tabItems[1]
+                tabItem.badgeValue = String(BasketService.shared.array.count)
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
     func filterContent(searchText: String, strToFiltr: String) -> String {
@@ -180,7 +195,6 @@ class DateViewController: UIViewController {
     }
     
     @IBAction func datePickerAction(_ sender: UIDatePicker) {
-        
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy HH:mm"
         dateString = formatter.string(from: datePicker.date)
@@ -192,13 +206,38 @@ class DateViewController: UIViewController {
         if nameTF.text == "" || telephoneTF.text == "" || adressLabel.text == "" {
             showAlert(title: "Заказ не выполнен!", message: "Заполните поле имени, телефона и адреса для оформления заказа")
         } else {
-            BasketService.shared.array.removeAll()
-            if let tabItems = tabBarController?.tabBar.items {
-                let tabItem = tabItems[1]
-                tabItem.badgeValue = String(BasketService.shared.array.count)
+            let purchaseHistory = PurchaseHistory(context: PersistenceService.context)
+            let info = Info(context: PersistenceService.context)
+            purchaseHistory.finalCost = self.finalCost
+            purchaseHistory.currentDate = Date()
+            
+            info.name = self.nameTF.text!
+            info.telephone = self.telephoneLabel.text! + self.telephoneTF.text!
+            info.adress = self.adressLabel.text!
+            info.room = self.roomTF.text ?? nil
+            info.porch = self.porchTF.text ?? nil
+            info.floor = self.floorTF.text ?? nil
+            info.code = self.codeTF.text ?? nil
+            info.comment = self.commentTV.text ?? nil
+            info.date = self.datePicker.date
+            purchaseHistory.info = NSSet(object: info)
+
+            var array = [Order]()
+            for element in BasketService.shared.array {
+                let order = Order(context: PersistenceService.context)
+                let data = element.picture.pngData()
+                order.picture = data
+                order.name = element.name
+                order.cost = element.cost
+                order.calories = element.calories
+                order.count = Int16(element.countProducts)
+                order.caloriesType = element.categorieKind.caloriesType
+                array.append(order)
+                purchaseHistory.order = NSSet(array: array)
+                PersistenceService.saveContext()
+                
             }
-            navigationController?.popToRootViewController(animated: false)
-            showAlert(title: "Заказ оформлен", message: "Не стесняйтесь заказать что-нибудь еще :)")
+            showAlertWithAction(title: "Заказ оформлен", message: "Не стесняйтесь заказать что-нибудь еще :)")
         }
     }
     
@@ -228,7 +267,7 @@ extension DateViewController: UITextViewDelegate {
         
         let myText = (textView.text as NSString).replacingCharacters(in: range, with: text)
         let numbOfChars = myText.count
-        return numbOfChars < 150
+        return numbOfChars < 100
     }
     
     

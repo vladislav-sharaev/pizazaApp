@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Info" representedClassName=".Info" syncable="YES">
+        <attribute name="adress" attributeType="String"/>
         <attribute name="code" optional="YES" attributeType="String"/>
-        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="floor" optional="YES" attributeType="String"/>
-        <attribute name="location" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="porch" optional="YES" attributeType="String"/>
         <attribute name="room" optional="YES" attributeType="String"/>
@@ -13,6 +14,7 @@
     </entity>
     <entity name="Order" representedClassName=".Order" syncable="YES">
         <attribute name="calories" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="caloriesType" attributeType="String"/>
         <attribute name="cost" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="count" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
@@ -26,8 +28,8 @@
         <relationship name="order" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="purchaseHistory" inverseEntity="Order"/>
     </entity>
     <elements>
-        <element name="Info" positionX="27" positionY="126" width="128" height="178"/>
-        <element name="Order" positionX="0" positionY="63" width="128" height="133"/>
-        <element name="PurchaseHistory" positionX="-36" positionY="9" width="128" height="103"/>
+        <element name="Info" positionX="-36" positionY="9" width="128" height="193"/>
+        <element name="Order" positionX="-54" positionY="-9" width="128" height="148"/>
+        <element name="PurchaseHistory" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>

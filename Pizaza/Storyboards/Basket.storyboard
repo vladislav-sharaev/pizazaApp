@@ -20,7 +20,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Корзина пуста! Добавьте что-нибудь" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9e-0G-Kmd">
                                 <rect key="frame" x="37.333333333333343" y="381" width="339.33333333333326" height="100"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="hBO-MD-zOy"/>
                                 </constraints>
@@ -30,7 +30,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vik-26-Y6P">
                                 <rect key="frame" x="157" y="491" width="100" height="50"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3kB-kQ-w73"/>
                                     <constraint firstAttribute="width" constant="100" id="Gdq-av-ztB"/>
@@ -43,7 +43,7 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tYf-gN-Iv2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="762"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasketTableViewCell" rowHeight="120" id="uBA-qZ-C1M" customClass="BasketTableViewCell" customModule="Pizaza" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="120"/>
@@ -100,7 +100,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vdo-7d-Xv6">
-                                                    <rect key="frame" x="276.33333333333331" y="10" width="127.66666666666669" height="100"/>
+                                                    <rect key="frame" x="304" y="10" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="LX1-MD-8Xd"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -111,14 +114,13 @@
                                                 <constraint firstItem="G7q-eC-Eug" firstAttribute="centerY" secondItem="DWS-In-A4h" secondAttribute="centerY" id="NOe-AK-iG8"/>
                                                 <constraint firstItem="G7q-eC-Eug" firstAttribute="leading" secondItem="DWS-In-A4h" secondAttribute="trailing" constant="15" id="Qs7-t9-Fcf"/>
                                                 <constraint firstAttribute="trailing" secondItem="vdo-7d-Xv6" secondAttribute="trailing" constant="10" id="SCc-Dz-1e7"/>
-                                                <constraint firstItem="vdo-7d-Xv6" firstAttribute="leading" secondItem="G7q-eC-Eug" secondAttribute="trailing" constant="30" id="Y4K-fS-1Od"/>
                                                 <constraint firstAttribute="bottom" secondItem="vdo-7d-Xv6" secondAttribute="bottom" constant="10" id="flr-ly-SKR"/>
                                                 <constraint firstItem="DWS-In-A4h" firstAttribute="top" secondItem="efH-vq-OIa" secondAttribute="topMargin" constant="5" id="inS-4O-zTz"/>
                                                 <constraint firstItem="GSF-8q-5Qu" firstAttribute="centerX" secondItem="G7q-eC-Eug" secondAttribute="centerX" id="oGc-Ln-hL1"/>
                                                 <constraint firstItem="DWS-In-A4h" firstAttribute="leading" secondItem="efH-vq-OIa" secondAttribute="leadingMargin" id="q4q-bw-Nk2"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="caloriesLabel" destination="G7q-eC-Eug" id="Wco-LY-nCK"/>
                                             <outlet property="costLabel" destination="GSF-8q-5Qu" id="5Lc-gD-i0Z"/>
@@ -176,7 +178,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="zm8-Tz-hYL" firstAttribute="top" secondItem="0mm-V2-Nr3" secondAttribute="top" constant="15" id="1qA-3Z-BuN"/>
                                     <constraint firstItem="uPS-se-J5h" firstAttribute="centerY" secondItem="0mm-V2-Nr3" secondAttribute="centerY" id="6ad-rV-jvo"/>
@@ -190,8 +192,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6HM-qZ-Fna" firstAttribute="height" secondItem="axs-Mm-cH4" secondAttribute="height" multiplier="1:3" id="8Wj-Ih-W1U"/>
                             <constraint firstItem="tYf-gN-Iv2" firstAttribute="trailing" secondItem="axs-Mm-cH4" secondAttribute="trailing" id="BwG-A3-85p"/>
@@ -249,7 +251,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1G7-Ga-BkL">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="851.33333333333337"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -262,7 +264,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="Bc0-rB-E0h"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1G7-Ga-BkL" firstAttribute="width" secondItem="jGI-ZK-IGF" secondAttribute="width" id="3hA-J7-FND"/>
                             <constraint firstItem="I4d-O6-76i" firstAttribute="top" secondItem="JT4-gn-HGt" secondAttribute="bottom" constant="10" id="JiN-Qw-MvG"/>
@@ -449,7 +451,7 @@
                                 </connections>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="col-zl-SrY" firstAttribute="top" secondItem="wqL-RP-J2F" secondAttribute="bottom" constant="10" id="2eH-CQ-IAE"/>
                             <constraint firstItem="0Cf-SS-PcH" firstAttribute="trailing" secondItem="itv-Sv-PAp" secondAttribute="trailing" constant="20" id="4QM-Z2-c8Y"/>
@@ -496,6 +498,7 @@
                         <outlet property="nameTF" destination="8h9-hE-AOY" id="0J4-ag-sAe"/>
                         <outlet property="porchTF" destination="qpm-aQ-8lw" id="QNJ-hq-iJ8"/>
                         <outlet property="roomTF" destination="Gzb-Vi-Bt7" id="zVY-So-oze"/>
+                        <outlet property="telephoneLabel" destination="rnm-nT-Juz" id="62P-aG-vNU"/>
                         <outlet property="telephoneTF" destination="Laq-ER-aRC" id="bsW-lk-K8G"/>
                     </connections>
                 </viewController>
@@ -542,7 +545,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Bmf-GG-npf" firstAttribute="trailing" secondItem="IYn-Qh-hEx" secondAttribute="trailing" constant="20" id="0VA-RQ-B5f"/>
                             <constraint firstItem="qjS-sq-pYr" firstAttribute="leading" secondItem="Bmf-GG-npf" secondAttribute="leading" id="1vB-ku-QO2"/>
@@ -727,7 +730,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8Tl-zK-gj9" firstAttribute="leading" secondItem="oay-ad-fTS" secondAttribute="leading" constant="20" id="0T8-97-WNT"/>
                             <constraint firstItem="oay-ad-fTS" firstAttribute="trailing" secondItem="NKx-Iw-ZF7" secondAttribute="trailing" constant="20" id="3zh-L3-RR4"/>
@@ -767,6 +770,7 @@
                         <outlet property="nameTF" destination="NKx-Iw-ZF7" id="Nu1-5r-fZr"/>
                         <outlet property="porchTF" destination="FUW-tF-Zr2" id="fvh-vQ-GKc"/>
                         <outlet property="roomTF" destination="4hz-O8-Nye" id="Kub-Cd-D0E"/>
+                        <outlet property="telephoneLabel" destination="oRM-Bc-rZg" id="b9l-QS-8vO"/>
                         <outlet property="telephoneTF" destination="PxV-Cq-YNq" id="9Ie-pK-QbV"/>
                     </connections>
                 </viewController>
@@ -783,7 +787,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ZN-c4-vON">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -838,6 +842,6 @@
         <image name="plus.circle.fill" catalog="system" width="64" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XNU-zA-eZY"/>
+        <segue reference="AEr-Ma-3cJ"/>
     </inferredMetricsTieBreakers>
 </document>
