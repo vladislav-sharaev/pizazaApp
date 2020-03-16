@@ -7,24 +7,46 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var loginTF: UITextField!
+    @IBOutlet weak var passTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        errorLabel.isHidden = true
+        addTFDelegate()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func addTFDelegate() {
+        loginTF.delegate = self
+        passTF.delegate = self
     }
-    */
+    
+    @IBAction func loginTFEdEnd(_ sender: UITextField) {
+    }
+    @IBAction func passTFEdEnd(_ sender: UITextField) {
+    }
+    @IBAction func signInAction(_ sender: UIButton) {
+        
+        Auth.auth().signIn(withEmail: loginTF.text!, password: passTF.text!) { (result, error) in
+            if error != nil {
+                self.errorLabel.isHidden = false
+                self.errorLabel.text = error!.localizedDescription
+            } else {
+                Helper.helper.goToProfileController(navigationController: self.navigationController!, animated: true)
+                
+            }
+        }
+    }
+}
 
+extension SignInViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 }

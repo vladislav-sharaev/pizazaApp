@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,13 @@
 		607D53BA240973C70032D544 /* CellProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607D53B9240973C70032D544 /* CellProductViewController.swift */; };
 		607D53BC240BEA140032D544 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607D53BB240BEA140032D544 /* DoubleExtension.swift */; };
 		607D53BE240C0E650032D544 /* UnitsForCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607D53BD240C0E650032D544 /* UnitsForCalories.swift */; };
+		608350BF241C341800F3BF69 /* ProfileFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608350BE241C341800F3BF69 /* ProfileFood.storyboard */; };
+		608350C6241E3FEE00F3BF69 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608350C5241E3FEE00F3BF69 /* AuthViewController.swift */; };
+		608350C8241E4D3300F3BF69 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608350C7241E4D3300F3BF69 /* SignInViewController.swift */; };
+		608350CA241E4D3D00F3BF69 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608350C9241E4D3D00F3BF69 /* RegisterViewController.swift */; };
+		608350CC241E560200F3BF69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 608350CB241E560200F3BF69 /* GoogleService-Info.plist */; };
+		608350CE241E9F7400F3BF69 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608350CD241E9F7400F3BF69 /* Helper.swift */; };
+		608350D0241E9FBD00F3BF69 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608350CF241E9FBD00F3BF69 /* ProfileViewController.swift */; };
 		60C5A6E923E742B00087D427 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5A6E723E742B00087D427 /* CategoriesCollectionViewCell.swift */; };
 		60C5A6EA23E742B00087D427 /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60C5A6E823E742B00087D427 /* CategoriesCollectionViewCell.xib */; };
 		60C5A6ED23E8480D0087D427 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5A6EC23E8480D0087D427 /* Categories.swift */; };
@@ -53,9 +60,12 @@
 		60E248B623E750F70053FFE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E248B523E750F70053FFE3 /* Assets.xcassets */; };
 		60E248B923E750F70053FFE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E248B723E750F70053FFE3 /* LaunchScreen.storyboard */; };
 		60F18C1B2405A5F3004B1281 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F18C192405A5F3004B1281 /* BasketTableViewCell.swift */; };
+		D05704DF53DE3C6A01261A04 /* Pods_Pizaza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0334A6A906D2A7AA4E53EE76 /* Pods_Pizaza.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0334A6A906D2A7AA4E53EE76 /* Pods_Pizaza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pizaza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		158E11E909E9F111E5CD2DCF /* Pods-Pizaza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pizaza.release.xcconfig"; path = "Target Support Files/Pods-Pizaza/Pods-Pizaza.release.xcconfig"; sourceTree = "<group>"; };
 		6010C5F1240D70A20092EC25 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		6010C5F3240D70A20092EC25 /* FastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastViewController.swift; sourceTree = "<group>"; };
 		6010C5F5240D70A20092EC25 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +96,13 @@
 		607D53B9240973C70032D544 /* CellProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProductViewController.swift; sourceTree = "<group>"; };
 		607D53BB240BEA140032D544 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoubleExtension.swift; path = ../DoubleExtension.swift; sourceTree = "<group>"; };
 		607D53BD240C0E650032D544 /* UnitsForCalories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsForCalories.swift; sourceTree = "<group>"; };
+		608350BE241C341800F3BF69 /* ProfileFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileFood.storyboard; sourceTree = "<group>"; };
+		608350C5241E3FEE00F3BF69 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		608350C7241E4D3300F3BF69 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		608350C9241E4D3D00F3BF69 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		608350CB241E560200F3BF69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		608350CD241E9F7400F3BF69 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		608350CF241E9FBD00F3BF69 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		60C5A6E723E742B00087D427 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		60C5A6E823E742B00087D427 /* CategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		60C5A6EC23E8480D0087D427 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
@@ -104,6 +121,7 @@
 		60E248B823E750F70053FFE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60E248BA23E750F70053FFE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60F18C192405A5F3004B1281 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		F008DDC9A96865143B437C00 /* Pods-Pizaza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pizaza.debug.xcconfig"; path = "Target Support Files/Pods-Pizaza/Pods-Pizaza.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05704DF53DE3C6A01261A04 /* Pods_Pizaza.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +166,53 @@
 				60765BEB23E8FC5A003E4503 /* Categories.storyboard */,
 				60765BE823E8F998003E4503 /* Basket.storyboard */,
 				6056AB072416BED200593DD1 /* PurchaseHistory.storyboard */,
+				608350BE241C341800F3BF69 /* ProfileFood.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		608350C0241E3F3600F3BF69 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				60E248AD23E750F50053FFE3 /* CategoriesViewController.swift */,
+				60C5A6F023E85D2F0087D427 /* FoodViewController.swift */,
+				60765BDF23E8E07F003E4503 /* OneProductViewController.swift */,
+				607D53B9240973C70032D544 /* CellProductViewController.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		608350C2241E3F7400F3BF69 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				602EB74C23EA1A5A00480B93 /* BasketViewController.swift */,
+				6010C5F1240D70A20092EC25 /* CheckoutViewController.swift */,
+				6010C5F3240D70A20092EC25 /* FastViewController.swift */,
+				6010C5F5240D70A20092EC25 /* DateViewController.swift */,
+				601A8F03240FD79A00A7FD9E /* MapViewController.swift */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		608350C3241E3F8D00F3BF69 /* PurchaseHistory */ = {
+			isa = PBXGroup;
+			children = (
+				6056AB092416BF7400593DD1 /* PurchaseHistoryViewController.swift */,
+				607460D124170B2A00D6CF79 /* OrderViewController.swift */,
+				607460E12418130300D6CF79 /* InfoViewController.swift */,
+			);
+			path = PurchaseHistory;
+			sourceTree = "<group>";
+		};
+		608350C4241E3FAD00F3BF69 /* ProfileFood */ = {
+			isa = PBXGroup;
+			children = (
+				608350C5241E3FEE00F3BF69 /* AuthViewController.swift */,
+				608350C7241E4D3300F3BF69 /* SignInViewController.swift */,
+				608350C9241E4D3D00F3BF69 /* RegisterViewController.swift */,
+				608350CF241E9FBD00F3BF69 /* ProfileViewController.swift */,
+			);
+			path = ProfileFood;
 			sourceTree = "<group>";
 		};
 		60C5A6E523E742650087D427 /* Cells */ = {
@@ -170,18 +234,10 @@
 		60C5A6E623E7426E0087D427 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				60E248AD23E750F50053FFE3 /* CategoriesViewController.swift */,
-				60C5A6F023E85D2F0087D427 /* FoodViewController.swift */,
-				60765BDF23E8E07F003E4503 /* OneProductViewController.swift */,
-				607D53B9240973C70032D544 /* CellProductViewController.swift */,
-				602EB74C23EA1A5A00480B93 /* BasketViewController.swift */,
-				6010C5F1240D70A20092EC25 /* CheckoutViewController.swift */,
-				6010C5F3240D70A20092EC25 /* FastViewController.swift */,
-				6010C5F5240D70A20092EC25 /* DateViewController.swift */,
-				601A8F03240FD79A00A7FD9E /* MapViewController.swift */,
-				6056AB092416BF7400593DD1 /* PurchaseHistoryViewController.swift */,
-				607460D124170B2A00D6CF79 /* OrderViewController.swift */,
-				607460E12418130300D6CF79 /* InfoViewController.swift */,
+				608350C0241E3F3600F3BF69 /* Categories */,
+				608350C2241E3F7400F3BF69 /* Basket */,
+				608350C3241E3F8D00F3BF69 /* PurchaseHistory */,
+				608350C4241E3FAD00F3BF69 /* ProfileFood */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +252,7 @@
 				602EB74823EA0BBD00480B93 /* BasketElement.swift */,
 				602EB74A23EA0CE800480B93 /* BasketService.swift */,
 				6056AB0B2416BF7400593DD1 /* PersistenceService.swift */,
+				608350CD241E9F7400F3BF69 /* Helper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +262,8 @@
 			children = (
 				60E248A823E750F50053FFE3 /* Pizaza */,
 				60E248A723E750F50053FFE3 /* Products */,
+				921B6D009290B9A6FF452204 /* Pods */,
+				966E9F8041E56E8EE0CC6D3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,9 +289,27 @@
 				60E248B523E750F70053FFE3 /* Assets.xcassets */,
 				60E248B723E750F70053FFE3 /* LaunchScreen.storyboard */,
 				60E248BA23E750F70053FFE3 /* Info.plist */,
+				608350CB241E560200F3BF69 /* GoogleService-Info.plist */,
 				6076BFAC2416E3BA003CFCEE /* Pizaza.xcdatamodeld */,
 			);
 			path = Pizaza;
+			sourceTree = "<group>";
+		};
+		921B6D009290B9A6FF452204 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F008DDC9A96865143B437C00 /* Pods-Pizaza.debug.xcconfig */,
+				158E11E909E9F111E5CD2DCF /* Pods-Pizaza.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		966E9F8041E56E8EE0CC6D3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0334A6A906D2A7AA4E53EE76 /* Pods_Pizaza.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,9 +319,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60E248BD23E750F70053FFE3 /* Build configuration list for PBXNativeTarget "Pizaza" */;
 			buildPhases = (
+				F83D735863432ED41B33E9D4 /* [CP] Check Pods Manifest.lock */,
 				60E248A223E750F50053FFE3 /* Sources */,
 				60E248A323E750F50053FFE3 /* Frameworks */,
 				60E248A423E750F50053FFE3 /* Resources */,
+				BDE04A7359972C892034E9DC /* [CP] Embed Pods Frameworks */,
+				EB2E22208D6E10CCB9F91984 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,12 +373,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				608350BF241C341800F3BF69 /* ProfileFood.storyboard in Resources */,
 				60C5A6EA23E742B00087D427 /* CategoriesCollectionViewCell.xib in Resources */,
 				60E248B923E750F70053FFE3 /* LaunchScreen.storyboard in Resources */,
 				60765BED23E8FC5A003E4503 /* Categories.storyboard in Resources */,
 				60765BE923E8F998003E4503 /* Basket.storyboard in Resources */,
 				60765BE423E8EB17003E4503 /* OneProductCollectionViewCell.xib in Resources */,
 				60E248B623E750F70053FFE3 /* Assets.xcassets in Resources */,
+				608350CC241E560200F3BF69 /* GoogleService-Info.plist in Resources */,
 				60C5A6F523E85E3E0087D427 /* FoodCollectionViewCell.xib in Resources */,
 				6056AB082416BED200593DD1 /* PurchaseHistory.storyboard in Resources */,
 				60E248B123E750F50053FFE3 /* Main.storyboard in Resources */,
@@ -306,6 +388,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDE04A7359972C892034E9DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pizaza/Pods-Pizaza-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pizaza/Pods-Pizaza-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pizaza/Pods-Pizaza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2E22208D6E10CCB9F91984 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pizaza/Pods-Pizaza-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pizaza/Pods-Pizaza-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pizaza/Pods-Pizaza-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83D735863432ED41B33E9D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pizaza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60E248A223E750F50053FFE3 /* Sources */ = {
@@ -317,17 +458,21 @@
 				602EB74F23F2717400480B93 /* UrlLoader.swift in Sources */,
 				607460DF241802A100D6CF79 /* PurchaseHistory+CoreDataClass.swift in Sources */,
 				60765BE323E8EB17003E4503 /* OneProductCollectionViewCell.swift in Sources */,
+				608350C8241E4D3300F3BF69 /* SignInViewController.swift in Sources */,
 				60E248AA23E750F50053FFE3 /* AppDelegate.swift in Sources */,
 				607D53BE240C0E650032D544 /* UnitsForCalories.swift in Sources */,
 				607460D424170C1B00D6CF79 /* OrderTableViewCell.swift in Sources */,
 				602EB74B23EA0CE800480B93 /* BasketService.swift in Sources */,
 				60C5A6F923E871260087D427 /* FoodModel.swift in Sources */,
+				608350CA241E4D3D00F3BF69 /* RegisterViewController.swift in Sources */,
 				601A8F04240FD79A00A7FD9E /* MapViewController.swift in Sources */,
 				60C5A6F123E85D2F0087D427 /* FoodViewController.swift in Sources */,
 				607460DB241802A100D6CF79 /* Order+CoreDataClass.swift in Sources */,
 				60E248AC23E750F50053FFE3 /* SceneDelegate.swift in Sources */,
 				60C5A6EF23E8480D0087D427 /* CategoriesModel.swift in Sources */,
 				6056AB0E2416BF7400593DD1 /* PurchaseHistoryTableViewCell.swift in Sources */,
+				608350D0241E9FBD00F3BF69 /* ProfileViewController.swift in Sources */,
+				608350C6241E3FEE00F3BF69 /* AuthViewController.swift in Sources */,
 				60C5A6E923E742B00087D427 /* CategoriesCollectionViewCell.swift in Sources */,
 				607460DC241802A100D6CF79 /* Order+CoreDataProperties.swift in Sources */,
 				607460DD241802A100D6CF79 /* Info+CoreDataClass.swift in Sources */,
@@ -335,6 +480,7 @@
 				607D53BA240973C70032D544 /* CellProductViewController.swift in Sources */,
 				602EB74923EA0BBD00480B93 /* BasketElement.swift in Sources */,
 				607460E22418130300D6CF79 /* InfoViewController.swift in Sources */,
+				608350CE241E9F7400F3BF69 /* Helper.swift in Sources */,
 				60C5A6F723E869CC0087D427 /* Food.swift in Sources */,
 				6010C5F6240D70A20092EC25 /* DateViewController.swift in Sources */,
 				6010C5F2240D70A20092EC25 /* CheckoutViewController.swift in Sources */,
@@ -498,6 +644,7 @@
 		};
 		60E248BE23E750F70053FFE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F008DDC9A96865143B437C00 /* Pods-Pizaza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +662,7 @@
 		};
 		60E248BF23E750F70053FFE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158E11E909E9F111E5CD2DCF /* Pods-Pizaza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

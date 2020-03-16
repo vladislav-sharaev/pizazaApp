@@ -49,7 +49,7 @@ class UrlLoader {
                 }
                 
             } else {
-                print("Error donwload data \(error?.localizedDescription)")
+                print("Error donwload data \(error!.localizedDescription)")
             }
         }
         dataTask.resume()
