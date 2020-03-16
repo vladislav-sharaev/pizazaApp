@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>83194903080-60m0um4f23894dvlp61lmqh85nednjat.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.83194903080-60m0um4f23894dvlp61lmqh85nednjat</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDh_O-kRaE6XXBao80dXwIjnQ3Or-HWxSQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>83194903080</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Vladislav.Pizaza</string>
+	<key>PROJECT_ID</key>
+	<string>pizazaapp-a2478</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pizazaapp-a2478.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:83194903080:ios:1daf3018ae8aa964df531d</string>
+	<key>DATABASE_URL</key>
+	<string>https://pizazaapp-a2478.firebaseio.com</string>
+</dict>
+</plist>
