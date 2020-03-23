@@ -37,8 +37,9 @@ class SignInViewController: UIViewController {
                 self.errorLabel.isHidden = false
                 self.errorLabel.text = error!.localizedDescription
             } else {
-                Helper.helper.goToProfileController(navigationController: self.navigationController!, animated: true)
+                let vc = self.storyboard!.instantiateViewController(identifier: "ProfileViewController") as! ProfileViewController
                 
+                self.navigationController?.setViewControllers([vc], animated: true)
             }
         }
     }

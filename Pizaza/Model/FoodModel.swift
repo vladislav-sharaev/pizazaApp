@@ -38,7 +38,7 @@ class FoodModel {
     func setUpPizza() {
         
         for index in 0 ..< urlForPizza.count {
-            let somePizza = Food(name: namesForPizza[index], costMin: minCostForPizza[index], costMax: maxCostForPizza[index], url: urlForPizza[index], minCalories: minCaloriesForPizza[index], maxCalories: maxCaloriesForPizza[index], ingridients: ingridientsForPizza[index])
+            let somePizza = Food(name: namesForPizza[index], costMin: minCostForPizza[index], costMax: maxCostForPizza[index], url: urlForPizza[index], minCalories: minCaloriesForPizza[index], maxCalories: maxCaloriesForPizza[index], ingridients: ingridientsForPizza[index], categorie: "pizza")
             pizzaContainer.append(somePizza)
         }
         pizzaContainer.reverse()
@@ -69,7 +69,7 @@ class FoodModel {
     
     func setUpDrink() {
         for index in 0 ..< urlForDrink.count {
-            let someDrink = Food(name: namesForDrink[index], costMin: minCostForDrink[index], costMax: maxCostForDrink[index], url: urlForDrink[index], minCalories: minCaloriesForDrink[index], maxCalories: maxCaloriesForDrink[index], ingridients: ingridientsForDrink[index])
+            let someDrink = Food(name: namesForDrink[index], costMin: minCostForDrink[index], costMax: maxCostForDrink[index], url: urlForDrink[index], minCalories: minCaloriesForDrink[index], maxCalories: maxCaloriesForDrink[index], ingridients: ingridientsForDrink[index], categorie: "dring")
             drinkContainer.append(someDrink)
         }
         drinkContainer.reverse()
@@ -94,7 +94,7 @@ class FoodModel {
     
     func setUpCandy() {
         for index in 0 ..< urlForCandy.count {
-            let someCandy = Food(name: namesForCandy[index], costMin: minCostForCandy[index], costMax: maxCostForCandy[index], url: urlForCandy[index], minCalories: minCaloriesForCandy[index], maxCalories: maxCaloriesForCandy[index], ingridients: ingridientsForCandy[index])
+            let someCandy = Food(name: namesForCandy[index], costMin: minCostForCandy[index], costMax: maxCostForCandy[index], url: urlForCandy[index], minCalories: minCaloriesForCandy[index], maxCalories: maxCaloriesForCandy[index], ingridients: ingridientsForCandy[index], categorie: "candy")
             candyContainer.append(someCandy)
         }
         candyContainer.reverse()

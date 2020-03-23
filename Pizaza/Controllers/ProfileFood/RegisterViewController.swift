@@ -48,8 +48,7 @@ class RegisterViewController: UIViewController {
         if text != someText {
             errorLabel.isHidden = false
             errorLabel.text = "Введите имя русскими или английскими символами"
-        } else { errorLabel.isHidden = true }
-        if text.count > 25 || text.count < 3 {
+        } else if text.count > 25 || text.count < 3 {
             errorLabel.isHidden = false
             errorLabel.text = "Введите ваше имя, используя от 3 до 25 символов"
         } else { errorLabel.isHidden = true }
@@ -63,8 +62,7 @@ class RegisterViewController: UIViewController {
         if text != someText {
             errorLabel.isHidden = false
             errorLabel.text = "Введите пароль русскими или английскими символами и цифрами"
-        } else { errorLabel.isHidden = true }
-        if text.count > 25 {
+        } else if text.count > 25 {
             errorLabel.isHidden = false
             errorLabel.text = "Введите ваш пароль, используя до 25 символов"
         } else { errorLabel.isHidden = true }
@@ -88,7 +86,7 @@ class RegisterViewController: UIViewController {
                 if error != nil {
                     self.errorLabel.isHidden = false
                     self.errorLabel.text = "\(error!.localizedDescription)"
-                } else {
+                } else {/*
                     let db = Firestore.firestore()
                     db.collection("users").addDocument(data: [
                         "name": self.nameTF.text!, "post": self.loginTF.text!
@@ -98,7 +96,9 @@ class RegisterViewController: UIViewController {
                         }
                         
                     }
-                    Helper.helper.goToProfileController(navigationController: self.navigationController!, animated: true)
+                    */
+                    let vc = self.storyboard!.instantiateViewController(identifier: "ProfileViewController") as! ProfileViewController
+                    self.navigationController?.setViewControllers([vc], animated: true)
                 }
             }
             

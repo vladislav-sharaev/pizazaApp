@@ -8,9 +8,6 @@
 
 import UIKit
 
-
-
-
 class BasketViewController: UIViewController {
     
     let cellId = "BasketTableViewCell"

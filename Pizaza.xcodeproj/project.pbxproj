@@ -15,6 +15,8 @@
 		602EB74B23EA0CE800480B93 /* BasketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602EB74A23EA0CE800480B93 /* BasketService.swift */; };
 		602EB74D23EA1A5A00480B93 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602EB74C23EA1A5A00480B93 /* BasketViewController.swift */; };
 		602EB74F23F2717400480B93 /* UrlLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602EB74E23F2717400480B93 /* UrlLoader.swift */; };
+		60550BEE2423B3FB00931934 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60550BEC2423B3FB00931934 /* FavoriteCollectionViewCell.swift */; };
+		60550BEF2423B3FB00931934 /* FavoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60550BED2423B3FB00931934 /* FavoriteCollectionViewCell.xib */; };
 		6056AB082416BED200593DD1 /* PurchaseHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6056AB072416BED200593DD1 /* PurchaseHistory.storyboard */; };
 		6056AB0A2416BF7400593DD1 /* PurchaseHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6056AB092416BF7400593DD1 /* PurchaseHistoryViewController.swift */; };
 		6056AB0C2416BF7400593DD1 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6056AB0B2416BF7400593DD1 /* PersistenceService.swift */; };
@@ -74,6 +76,8 @@
 		602EB74A23EA0CE800480B93 /* BasketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketService.swift; sourceTree = "<group>"; };
 		602EB74C23EA1A5A00480B93 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		602EB74E23F2717400480B93 /* UrlLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlLoader.swift; sourceTree = "<group>"; };
+		60550BEC2423B3FB00931934 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		60550BED2423B3FB00931934 /* FavoriteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteCollectionViewCell.xib; sourceTree = "<group>"; };
 		6056AB072416BED200593DD1 /* PurchaseHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PurchaseHistory.storyboard; sourceTree = "<group>"; };
 		6056AB092416BF7400593DD1 /* PurchaseHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHistoryViewController.swift; sourceTree = "<group>"; };
 		6056AB0B2416BF7400593DD1 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 				60F18C192405A5F3004B1281 /* BasketTableViewCell.swift */,
 				6056AB0D2416BF7400593DD1 /* PurchaseHistoryTableViewCell.swift */,
 				607460D324170C1B00D6CF79 /* OrderTableViewCell.swift */,
+				60550BEC2423B3FB00931934 /* FavoriteCollectionViewCell.swift */,
+				60550BED2423B3FB00931934 /* FavoriteCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				608350CC241E560200F3BF69 /* GoogleService-Info.plist in Resources */,
 				60C5A6F523E85E3E0087D427 /* FoodCollectionViewCell.xib in Resources */,
 				6056AB082416BED200593DD1 /* PurchaseHistory.storyboard in Resources */,
+				60550BEF2423B3FB00931934 /* FavoriteCollectionViewCell.xib in Resources */,
 				60E248B123E750F50053FFE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +478,7 @@
 				60E248AC23E750F50053FFE3 /* SceneDelegate.swift in Sources */,
 				60C5A6EF23E8480D0087D427 /* CategoriesModel.swift in Sources */,
 				6056AB0E2416BF7400593DD1 /* PurchaseHistoryTableViewCell.swift in Sources */,
+				60550BEE2423B3FB00931934 /* FavoriteCollectionViewCell.swift in Sources */,
 				608350D0241E9FBD00F3BF69 /* ProfileViewController.swift in Sources */,
 				608350C6241E3FEE00F3BF69 /* AuthViewController.swift in Sources */,
 				60C5A6E923E742B00087D427 /* CategoriesCollectionViewCell.swift in Sources */,

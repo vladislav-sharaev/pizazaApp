@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CategoriesViewController: UIViewController {
     
@@ -21,6 +22,11 @@ class CategoriesViewController: UIViewController {
         super.viewDidLoad()
         title = "Категории"
         addCollecetionView()
+        if Auth.auth().currentUser != nil {
+            print("___________/n Added in categories")
+            Helper.helper.addDocToArray { (success) in
+            }
+        }
         
     }
     

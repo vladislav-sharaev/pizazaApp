@@ -26,6 +26,11 @@ class FoodViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //foodCollectionView.reloadData()
+    }
+    
     func addCollectionView() {
         foodCollectionView.delegate = self
         foodCollectionView.dataSource = self
@@ -71,9 +76,12 @@ extension FoodViewController: UICollectionViewDataSource, UICollectionViewDelega
             cell.caloriesLabel.text = String(usableArray[indexPath.row].minCalories) + " кг."
 
         }
+        cell.food = usableArray[indexPath.row]
+        cell.categorieKind = categorieKind
         cell.foodNameLabel.text = usableArray[indexPath.row].name
         cell.ingridientsLabel.text = usableArray[indexPath.row].ingridients
         cell.costLabel.text = usableArray[indexPath.row].getCost()
+        cell.indexPath = indexPath
         return cell
     }
     
@@ -96,3 +104,4 @@ extension FoodViewController: UICollectionViewDataSource, UICollectionViewDelega
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
+
