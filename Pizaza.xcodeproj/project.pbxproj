@@ -46,6 +46,7 @@
 		608350CC241E560200F3BF69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 608350CB241E560200F3BF69 /* GoogleService-Info.plist */; };
 		608350CE241E9F7400F3BF69 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608350CD241E9F7400F3BF69 /* Helper.swift */; };
 		608350D0241E9FBD00F3BF69 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608350CF241E9FBD00F3BF69 /* ProfileViewController.swift */; };
+		609A3C16243602A500050572 /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A3C15243602A500050572 /* ForgotPassViewController.swift */; };
 		60C5A6E923E742B00087D427 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5A6E723E742B00087D427 /* CategoriesCollectionViewCell.swift */; };
 		60C5A6EA23E742B00087D427 /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60C5A6E823E742B00087D427 /* CategoriesCollectionViewCell.xib */; };
 		60C5A6ED23E8480D0087D427 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C5A6EC23E8480D0087D427 /* Categories.swift */; };
@@ -107,6 +108,7 @@
 		608350CB241E560200F3BF69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		608350CD241E9F7400F3BF69 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		608350CF241E9FBD00F3BF69 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		609A3C15243602A500050572 /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		60C5A6E723E742B00087D427 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		60C5A6E823E742B00087D427 /* CategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		60C5A6EC23E8480D0087D427 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				608350C5241E3FEE00F3BF69 /* AuthViewController.swift */,
+				609A3C15243602A500050572 /* ForgotPassViewController.swift */,
 				608350C7241E4D3300F3BF69 /* SignInViewController.swift */,
 				608350C9241E4D3D00F3BF69 /* RegisterViewController.swift */,
 				608350CF241E9FBD00F3BF69 /* ProfileViewController.swift */,
@@ -480,6 +483,7 @@
 				6056AB0E2416BF7400593DD1 /* PurchaseHistoryTableViewCell.swift in Sources */,
 				60550BEE2423B3FB00931934 /* FavoriteCollectionViewCell.swift in Sources */,
 				608350D0241E9FBD00F3BF69 /* ProfileViewController.swift in Sources */,
+				609A3C16243602A500050572 /* ForgotPassViewController.swift in Sources */,
 				608350C6241E3FEE00F3BF69 /* AuthViewController.swift in Sources */,
 				60C5A6E923E742B00087D427 /* CategoriesCollectionViewCell.swift in Sources */,
 				607460DC241802A100D6CF79 /* Order+CoreDataProperties.swift in Sources */,

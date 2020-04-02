@@ -118,10 +118,13 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
             locat = manager.location
             geocoder.reverseGeocodeLocation(locat!) { (placemarks, error) in
                 if error != nil {
-                    print("eror")
+                    print("error")
+                    return
                 }
                 
-                let pm = placemarks!
+                guard let pm = placemarks else {
+                    print ("No placemark")
+                    return }
                 if pm.count > 0 {
                     let pm = placemarks![0]
                     let adress = pm.country! + ", " + pm.locality! + ", " + pm.subLocality!
