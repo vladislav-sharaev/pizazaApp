@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseDatabase
 import Firebase
 import FirebaseAuth
 import GoogleSignIn

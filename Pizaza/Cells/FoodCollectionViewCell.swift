@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 protocol FoodCollectionViewCellDelegate {
     func needUpdate(update: Bool)

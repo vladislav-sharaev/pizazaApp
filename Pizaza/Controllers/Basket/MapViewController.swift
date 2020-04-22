@@ -121,13 +121,25 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
                     print("error")
                     return
                 }
-                
                 guard let pm = placemarks else {
                     print ("No placemark")
-                    return }
+                    return
+                }
+                
                 if pm.count > 0 {
-                    let pm = placemarks![0]
-                    let adress = pm.country! + ", " + pm.locality! + ", " + pm.subLocality!
+                    var country = ""
+                    var locality = ""
+                    var subLocality = ""
+                    if pm[0].country != nil {
+                        country = pm[0].country!
+                    }
+                    if pm[0].locality != nil {
+                        locality = pm[0].locality!
+                    }
+                    if pm[0].subLocality != nil {
+                        subLocality = pm[0].subLocality!
+                    }
+                    let adress = country + ", " + locality + ", " + subLocality
                     self.adressTextField.text = adress
                     manager.stopUpdatingLocation()
                     

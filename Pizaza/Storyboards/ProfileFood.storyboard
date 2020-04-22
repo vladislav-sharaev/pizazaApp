@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чтобы добавить любимые товары, вам надо войти в аккаунт" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YY-NB-JNK">
-                                <rect key="frame" x="82" y="273.5" width="250" height="80"/>
+                                <rect key="frame" x="82" y="139" width="250" height="80"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="SRp-AV-ze1"/>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmu-ft-tbX">
-                                <rect key="frame" x="102" y="453.5" width="210" height="30"/>
+                                <rect key="frame" x="102" y="249" width="210" height="30"/>
                                 <color key="backgroundColor" red="0.98382955790000004" green="0.97419327499999997" blue="0.55863195659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="tso-ri-ocX"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-Av-Su5">
-                                <rect key="frame" x="102" y="528.5" width="210" height="30"/>
+                                <rect key="frame" x="102" y="294" width="210" height="30"/>
                                 <color key="backgroundColor" red="0.98382955790000004" green="0.97419327499999997" blue="0.55863195659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="CNv-iu-cV8"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdZ-SL-JYi">
-                                <rect key="frame" x="20" y="573.5" width="374" height="6"/>
+                                <rect key="frame" x="20" y="339" width="374" height="6"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="6" id="gvP-kx-WA7"/>
@@ -61,14 +61,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Или войти с помощью:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCM-rk-dFj">
-                                <rect key="frame" x="102" y="599.5" width="210" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Или войти с помощью:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCM-rk-dFj">
+                                <rect key="frame" x="102" y="360" width="210" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8F-Oc-kLY">
-                                <rect key="frame" x="187" y="635.5" width="40" height="40"/>
+                                <rect key="frame" x="187" y="395.5" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="i7Q-by-5SV"/>
                                     <constraint firstAttribute="height" constant="40" id="usL-v1-DD1"/>
@@ -87,16 +87,16 @@
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3cb-Av-Su5" firstAttribute="centerX" secondItem="RtB-Cd-Ds6" secondAttribute="centerX" id="2df-0d-9XW"/>
-                            <constraint firstItem="tCM-rk-dFj" firstAttribute="top" secondItem="tdZ-SL-JYi" secondAttribute="bottom" constant="20" id="7pF-VT-CXv"/>
+                            <constraint firstItem="tCM-rk-dFj" firstAttribute="top" secondItem="tdZ-SL-JYi" secondAttribute="bottom" constant="15" id="7pF-VT-CXv"/>
                             <constraint firstItem="tdZ-SL-JYi" firstAttribute="top" secondItem="3cb-Av-Su5" secondAttribute="bottom" constant="15" id="8ay-tf-qWR"/>
                             <constraint firstItem="Wv0-56-PV8" firstAttribute="trailing" secondItem="tCM-rk-dFj" secondAttribute="trailing" constant="102" id="H9A-2a-AHh"/>
                             <constraint firstItem="W8F-Oc-kLY" firstAttribute="centerX" secondItem="RtB-Cd-Ds6" secondAttribute="centerX" id="Iqw-oW-pRi"/>
                             <constraint firstItem="W8F-Oc-kLY" firstAttribute="top" secondItem="tCM-rk-dFj" secondAttribute="bottom" constant="15" id="PQT-YS-sUC"/>
                             <constraint firstItem="tCM-rk-dFj" firstAttribute="leading" secondItem="Wv0-56-PV8" secondAttribute="leading" constant="102" id="RQ3-qE-LtE"/>
-                            <constraint firstItem="3cb-Av-Su5" firstAttribute="top" secondItem="Bmu-ft-tbX" secondAttribute="bottom" constant="45" id="RuT-5f-pOn"/>
+                            <constraint firstItem="3cb-Av-Su5" firstAttribute="top" secondItem="Bmu-ft-tbX" secondAttribute="bottom" constant="15" id="RuT-5f-pOn"/>
                             <constraint firstItem="4YY-NB-JNK" firstAttribute="centerX" secondItem="RtB-Cd-Ds6" secondAttribute="centerX" id="XRE-il-RvB"/>
-                            <constraint firstItem="4YY-NB-JNK" firstAttribute="centerY" secondItem="RtB-Cd-Ds6" secondAttribute="centerY" multiplier="0.7:1" id="bim-WN-8px"/>
-                            <constraint firstItem="Bmu-ft-tbX" firstAttribute="top" secondItem="4YY-NB-JNK" secondAttribute="bottom" constant="100" id="h7c-TL-1y6"/>
+                            <constraint firstItem="4YY-NB-JNK" firstAttribute="centerY" secondItem="RtB-Cd-Ds6" secondAttribute="centerY" multiplier="0.4:1" id="bim-WN-8px"/>
+                            <constraint firstItem="Bmu-ft-tbX" firstAttribute="top" secondItem="4YY-NB-JNK" secondAttribute="bottom" constant="30" id="h7c-TL-1y6"/>
                             <constraint firstItem="Wv0-56-PV8" firstAttribute="trailing" secondItem="tdZ-SL-JYi" secondAttribute="trailing" constant="20" id="kU9-oY-oSa"/>
                             <constraint firstItem="Bmu-ft-tbX" firstAttribute="centerX" secondItem="RtB-Cd-Ds6" secondAttribute="centerX" id="pHO-Qo-sGx"/>
                             <constraint firstItem="tdZ-SL-JYi" firstAttribute="leading" secondItem="Wv0-56-PV8" secondAttribute="leading" constant="20" id="q4e-wg-ebO"/>
@@ -161,7 +161,7 @@
                                     <action selector="registerAction:" destination="B9k-1Z-twh" eventType="touchUpInside" id="zXU-hd-RZ5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Неверный логин или пароль" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qR2-uR-ZCT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Неверный логин или пароль" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qR2-uR-ZCT">
                                 <rect key="frame" x="82" y="358" width="250" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="5Al-xo-qOL"/>
@@ -243,7 +243,7 @@
                                     <action selector="signInAction:" destination="rcC-NW-9ZR" eventType="touchUpInside" id="DrF-6i-JKp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Неверный логин или пароль" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDh-iu-VXE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Неверный логин или пароль" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDh-iu-VXE">
                                 <rect key="frame" x="82" y="309" width="250" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="IgK-2b-RIA"/>
@@ -470,6 +470,6 @@
     <resources>
         <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
         <image name="google" width="225" height="225"/>
-        <image name="heart" catalog="system" width="64" height="58"/>
+        <image name="heart" catalog="system" width="64" height="54"/>
     </resources>
 </document>
