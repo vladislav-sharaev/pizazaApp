@@ -12,6 +12,7 @@ import FirebaseAuth
 
 protocol FoodCollectionViewCellDelegate {
     func needUpdate(update: Bool)
+    func showNilUser()
 }
 
 class FoodCollectionViewCell: UICollectionViewCell {
@@ -67,14 +68,7 @@ class FoodCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func showAlert(title: String, message: String?) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Xopowo", style: .cancel, handler: nil))
-    }
-    
     @IBAction func likeBtnAction(_ sender: UIButton) {
-        print("Like btn tapped")
-        
         if Auth.auth().currentUser != nil {
             let foodData = ["name": food.name,
                             "minCalories": food.minCalories,
@@ -106,6 +100,7 @@ class FoodCollectionViewCell: UICollectionViewCell {
                 counter += 1
                 
             }
+            
             if added == false {
                 Helper.root.document(foodData["name"] as! String).setData(foodData, merge: true) { (error) in
                     if let error = error {
@@ -116,8 +111,9 @@ class FoodCollectionViewCell: UICollectionViewCell {
                 self.likeButton.setImage(UIImage(named: "dslike"), for: .normal)
                 Helper.helper.likedFood.append(self.food)
             }
-        } else {
-            showAlert(title: "Войдите в аккаунт", message: "Прежде чем добавить товар в избранные, вам нужно войти в аккаунт")
+        }
+        if Auth.auth().currentUser == nil {
+            delegate?.showNilUser()
         }
         
     }

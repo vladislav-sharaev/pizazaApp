@@ -133,6 +133,10 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDeleg
 }
 
 extension ProfileViewController: FoodCollectionViewCellDelegate {
+    func showNilUser() {
+        //
+    }
+    
     func needUpdate(update: Bool) {
         if update == true {
             self.collectionView.reloadData()

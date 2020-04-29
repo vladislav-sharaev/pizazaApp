@@ -427,6 +427,40 @@
             </objects>
             <point key="canvasLocation" x="3463.7681159420295" y="37.5"/>
         </scene>
+        <!--Reachability View Controller-->
+        <scene sceneID="9T8-ES-Kqq">
+            <objects>
+                <viewController storyboardIdentifier="ReachabilityViewController" id="kXX-eS-A6j" customClass="ReachabilityViewController" customModule="Pizaza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XYk-1J-M2A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="On5-4l-GCl">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9Nr-f4-Iys"/>
+                                    <constraint firstAttribute="height" constant="100" id="ULh-th-Baj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="refreshBtn:" destination="kXX-eS-A6j" eventType="touchUpInside" id="NbH-S8-9We"/>
+                                    <action selector="refreshBtn:" destination="TAw-vA-7Ik" eventType="touchUpInside" id="bzD-Jr-bG1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="On5-4l-GCl" firstAttribute="centerY" secondItem="XYk-1J-M2A" secondAttribute="centerY" id="m2O-NH-QCF"/>
+                            <constraint firstItem="On5-4l-GCl" firstAttribute="centerX" secondItem="XYk-1J-M2A" secondAttribute="centerX" id="vka-Ml-0k6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NrT-0v-bbX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="piq-Hy-DCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="TAw-vA-7Ik" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4571" y="38"/>
+        </scene>
         <!--Like-->
         <scene sceneID="nDR-IX-xkk">
             <objects>

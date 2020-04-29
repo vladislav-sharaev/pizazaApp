@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class FoodViewController: UIViewController {
     
     @IBOutlet weak var foodCollectionView: UICollectionView!
@@ -28,7 +30,6 @@ class FoodViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //foodCollectionView.reloadData()
     }
     
     func addCollectionView() {
@@ -49,6 +50,12 @@ class FoodViewController: UIViewController {
             title = categorieKind.title
             return foodModel.candyContainer
         }
+    }
+    
+    func showAlert(title: String, message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Xopowo", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
@@ -82,6 +89,7 @@ extension FoodViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.ingridientsLabel.text = usableArray[indexPath.row].ingridients
         cell.costLabel.text = usableArray[indexPath.row].getCost()
         cell.indexPath = indexPath
+        cell.delegate = self
         return cell
     }
     
@@ -105,3 +113,15 @@ extension FoodViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
 }
 
+extension FoodViewController: FoodCollectionViewCellDelegate {
+    func needUpdate(update: Bool) {
+        //
+    }
+    
+    func showNilUser() {
+        self.showAlert(title: "Войдите в аккаунт", message: "Чтобы добавить товар в избранные, вы должны быть зарегистрированы")
+        self.tabBarController?.selectedIndex = 3
+    }
+    
+    
+}
