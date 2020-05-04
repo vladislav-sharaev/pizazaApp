@@ -31,10 +31,6 @@ class SignInViewController: UIViewController {
     @IBAction func passTFEdEnd(_ sender: UITextField) {
     }
     @IBAction func signInAction(_ sender: UIButton) {
-        if Reachability.isConnectedToNetwork() == false {
-            nonConnection(otherVC: self)
-            return
-        }
         Auth.auth().signIn(withEmail: loginTF.text!, password: passTF.text!) { (result, error) in
             if error != nil {
                 self.errorLabel.isHidden = false

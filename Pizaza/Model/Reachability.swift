@@ -8,6 +8,7 @@
 
 import Foundation
 import SystemConfiguration
+import UIKit
 
 class Reachability {
     class func isConnectedToNetwork() -> Bool {
@@ -25,5 +26,13 @@ class Reachability {
         let isReachable = flags.contains(.reachable)
         let needsConnection = flags.contains(.connectionRequired)
         return (isReachable && !needsConnection)
-    } // isConnectedToNetwork
-} // class Reachabilit`
+    }
+    
+    class func nonConnection(otherVC: UIViewController) {
+        print("here")
+        let sb = UIStoryboard(name: "ProfileFood", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "ReachabilityViewController") as! ReachabilityViewController
+        vc.modalPresentationStyle = .fullScreen
+        otherVC.present(vc, animated: true, completion: nil)
+    }
+}
