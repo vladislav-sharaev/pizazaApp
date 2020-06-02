@@ -24,10 +24,6 @@ class Helper {
     static var root: CollectionReference {
         return db.collection("users").document(uid!).collection(environment)
     } 
-    
-//    func goToController(navigationController: UINavigationController, storyboard: UIStoryboard, vc: UIViewController, animated: Bool) {
-//        navigationController.setViewControllers([vc], animated: animated)
-//    }
         
     func getSnapshotCount() -> Int {
         var count = 0

@@ -12,8 +12,11 @@ import FirebaseAuth
 
 class CategoriesViewController: UIViewController {
     
+    @IBOutlet weak var myView: UIView!
+    @IBOutlet weak var viewsHeight: NSLayoutConstraint!
     @IBOutlet weak var categoriesCollectionVIew: UICollectionView!
     
+    let sectionHeaderView = "SectionHeaderViewCollectionReusableView"
     let categoriesCellID = "CategoriesCollectionViewCell"
     let cellsCountInARow = 2
     let offSet: CGFloat = 10
@@ -28,7 +31,6 @@ class CategoriesViewController: UIViewController {
             Helper.helper.addDocToArray { (success) in
             }
         }
-        
     }
     
     func addCollecetionView() {
@@ -58,7 +60,7 @@ extension CategoriesViewController: UICollectionViewDataSource, UICollectionView
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let frameVC = collectionView.frame
-        let widthCell = frameVC.width / CGFloat(cellsCountInARow)
+        let widthCell = frameVC.width / CGFloat(cellsCountInARow) //1 instead cellCountInRow
         let heightCell = widthCell + 0.5 * widthCell
         let spacing = CGFloat(cellsCountInARow + 1) * offSet / CGFloat(cellsCountInARow)
         
@@ -72,5 +74,13 @@ extension CategoriesViewController: UICollectionViewDataSource, UICollectionView
         vc.categorieKind = categorie.kind
          //vc.indexPath = indexPath
          self.navigationController?.pushViewController(vc, animated: true)
-     }   
+     }
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let sectionHeaderView = categoriesCollectionVIew.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: self.sectionHeaderView, for: indexPath) as! SectionHeaderViewCollectionReusableView
+        return sectionHeaderView
+    }
 }

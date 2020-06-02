@@ -71,7 +71,9 @@ extension AuthViewController: GIDSignInDelegate {
              return
          }
          
-         guard let authentication = user.authentication else { return }
+         guard let authentication = user.authentication else {
+            print("auth error")
+            return }
          let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
          
          Auth.auth().signIn(with: credential) { (result, error) in
@@ -79,8 +81,9 @@ extension AuthViewController: GIDSignInDelegate {
                  print("Some sign in error ", error)
                  return
              }
+             print("Good")
              guard let uid = result?.user.uid else { return }
-             guard let email     = result?.user.email else { return }
+             guard let email = result?.user.email else { return }
              guard let userName = result?.user.displayName else { return }
              let values = ["email": email, "username": userName]
              Database.database().reference().child(uid).updateChildValues(values) { (error, ref) in

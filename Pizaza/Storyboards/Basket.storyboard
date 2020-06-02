@@ -53,17 +53,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWS-In-A4h">
-                                                    <rect key="frame" x="25" y="16" width="120" height="50"/>
+                                                    <rect key="frame" x="25" y="16" width="130" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="XdR-AX-hMQ"/>
-                                                        <constraint firstAttribute="width" constant="120" id="xw4-cf-u7K"/>
+                                                        <constraint firstAttribute="width" constant="130" id="xw4-cf-u7K"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="G5k-YD-KUN">
-                                                    <rect key="frame" x="31.666666666666671" y="76" width="107.00000000000001" height="24"/>
+                                                    <rect key="frame" x="36.666666666666657" y="76" width="107" height="24"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtY-A0-j7l">
                                                             <rect key="frame" x="0.0" y="0.0" width="27.666666666666668" height="24"/>
@@ -73,13 +73,13 @@
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVE-Q1-D82">
-                                                            <rect key="frame" x="39.666666666666657" y="0.0" width="27.666666666666671" height="24"/>
+                                                            <rect key="frame" x="39.666666666666664" y="0.0" width="27.666666666666664" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nky-cg-4qG">
-                                                            <rect key="frame" x="79.333333333333329" y="0.0" width="27.666666666666671" height="24"/>
+                                                            <rect key="frame" x="79.333333333333343" y="0.0" width="27.666666666666671" height="24"/>
                                                             <state key="normal" image="plus.circle.fill" catalog="system"/>
                                                             <connections>
                                                                 <action selector="plusAction:" destination="uBA-qZ-C1M" eventType="touchUpInside" id="0WU-cT-F6e"/>
@@ -88,13 +88,13 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cost" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSF-8q-5Qu">
-                                                    <rect key="frame" x="219" y="76" width="41.333333333333314" height="24"/>
+                                                    <rect key="frame" x="224" y="76" width="41.333333333333314" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7q-eC-Eug">
-                                                    <rect key="frame" x="150" y="29" width="179" height="24"/>
+                                                    <rect key="frame" x="160" y="29" width="169" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>

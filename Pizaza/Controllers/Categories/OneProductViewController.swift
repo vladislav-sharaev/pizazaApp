@@ -87,8 +87,7 @@ extension OneProductViewController: UICollectionViewDataSource, UICollectionView
                     cellContentVC.oneProductImageView.image = image
                     
                 }
-                
-            }            
+            }
         }
         return cell
     }

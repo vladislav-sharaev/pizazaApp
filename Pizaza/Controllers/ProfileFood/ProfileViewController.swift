@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseFirestore
 import Firebase
+import GoogleSignIn
 
 class ProfileViewController: UIViewController {
     
@@ -60,6 +61,7 @@ class ProfileViewController: UIViewController {
         do {
             print(Auth.auth().currentUser?.uid as Any)
             try Auth.auth().signOut()
+            //GIDSignIn.sharedInstance()?.signOut()
             Helper.helper.likedFood.removeAll()
             let vc = self.storyboard!.instantiateViewController(identifier: "AuthViewController") as! AuthViewController
             self.navigationController?.setViewControllers([vc], animated: true)

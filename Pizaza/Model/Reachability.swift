@@ -29,10 +29,14 @@ class Reachability {
     }
     
     class func nonConnection(otherVC: UIViewController) {
-        print("here")
-        let sb = UIStoryboard(name: "ProfileFood", bundle: nil)
-        let vc = sb.instantiateViewController(identifier: "ReachabilityViewController") as! ReachabilityViewController
-        vc.modalPresentationStyle = .fullScreen
-        otherVC.present(vc, animated: true, completion: nil)
+        if !Reachability.isConnectedToNetwork() {
+            let sb = UIStoryboard(name: "ProfileFood", bundle: nil)
+            let vc = sb.instantiateViewController(identifier: "ReachabilityViewController") as! ReachabilityViewController
+            vc.modalPresentationStyle = .fullScreen
+            otherVC.present(vc, animated: true, completion: nil)
+        } else {
+            //otherVC.dismiss(animated: true, completion: nil)
+        }
+        
     }
 }

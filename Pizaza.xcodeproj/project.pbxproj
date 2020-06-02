@@ -66,6 +66,7 @@
 		D04BDBEE2459D9BF00167D55 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BDBED2459D9BF00167D55 /* Reachability.swift */; };
 		D04BDBF02459DAF000167D55 /* ReachabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BDBEF2459DAF000167D55 /* ReachabilityViewController.swift */; };
 		D05704DF53DE3C6A01261A04 /* Pods_Pizaza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0334A6A906D2A7AA4E53EE76 /* Pods_Pizaza.framework */; };
+		D0DAF27324869C2300035778 /* SectionHeaderViewCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DAF27224869C2300035778 /* SectionHeaderViewCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +132,7 @@
 		60F18C192405A5F3004B1281 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
 		D04BDBED2459D9BF00167D55 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D04BDBEF2459DAF000167D55 /* ReachabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityViewController.swift; sourceTree = "<group>"; };
+		D0DAF27224869C2300035778 /* SectionHeaderViewCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderViewCollectionReusableView.swift; sourceTree = "<group>"; };
 		F008DDC9A96865143B437C00 /* Pods-Pizaza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pizaza.debug.xcconfig"; path = "Target Support Files/Pods-Pizaza/Pods-Pizaza.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,6 +232,7 @@
 		60C5A6E523E742650087D427 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D0DAF27224869C2300035778 /* SectionHeaderViewCollectionReusableView.swift */,
 				60C5A6E723E742B00087D427 /* CategoriesCollectionViewCell.swift */,
 				60C5A6E823E742B00087D427 /* CategoriesCollectionViewCell.xib */,
 				60C5A6F223E85E3E0087D427 /* FoodCollectionViewCell.swift */,
@@ -500,6 +503,7 @@
 				602EB74923EA0BBD00480B93 /* BasketElement.swift in Sources */,
 				607460E22418130300D6CF79 /* InfoViewController.swift in Sources */,
 				608350CE241E9F7400F3BF69 /* Helper.swift in Sources */,
+				D0DAF27324869C2300035778 /* SectionHeaderViewCollectionReusableView.swift in Sources */,
 				60C5A6F723E869CC0087D427 /* Food.swift in Sources */,
 				6010C5F6240D70A20092EC25 /* DateViewController.swift in Sources */,
 				6010C5F2240D70A20092EC25 /* CheckoutViewController.swift in Sources */,
